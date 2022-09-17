@@ -221,11 +221,13 @@
 		</div>
 
 		<div class="contact-form">
-			<form action="">
+			<form onsubmit="sendEmail(); reset();return false;">
+				<!-- id="clint_mail" -->
 				<input type="" placeholder="Enter Your Name" required>
 				<input type="email" placeholder="Enter Your Email" required>
-				<input type="" placeholder="Enter Your Subject">
-				<textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+				<input type="" placeholder="Enter Your Subject" id="clint_subject">
+				<textarea name="" id="clint_massege" cols="40" rows="10" placeholder="Enter Your Message"
+					required></textarea>
 				<input type="submit" value="Submit" class="send">
 			</form>
 		</div>
@@ -243,6 +245,21 @@
 	<script type="text/javascript" src="js/animation.js"></script>
 	<!-- email config  -->
 	<script src="https://smtpjs.com/v3/smtp.js">
+	</script>
+	<script> function sendEmail() {
+			Email.send({
+				// Host: "smtp.elasticemail.com",
+				Host: "smtp.gmail.com",
+				Username: "emacogloball@gmail.com",
+				Password: "1D231A818734F4949B611AEA0C95B9922242",
+				To: 'emacogloball@gmail.com',
+				From: document.getElementById("clint_mail").value,
+				Subject: document.getElementById("clint_subject").value,
+				Body: document.getElementById("clint_massege").value,
+			}).then(
+				message => alert(message)
+			);
+		}
 	</script>
 	<!---custom js link--->
 	<script type="text/javascript" src="js/script.js"></script>
