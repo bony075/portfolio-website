@@ -123,6 +123,7 @@ span {
 	transition: all .40s ease;
 }
 
+.btnDetail:hover,
 .btn:hover {
 	transform: scale(1.01) translateY(-5px);
 	background: transparent;
@@ -241,6 +242,66 @@ header.sticky {
 	gap: 2rem;
 	margin-top: 5rem;
 }
+
+/* scroll image  */
+.container .box {
+	height: 270px;
+	width: 100%;
+	background: #000;
+	background-position: top;
+	transition: ease-in-out 8s;
+}
+
+.container .box.box1 {
+	background: url(../img/1.png);
+	background-size: cover;
+
+}
+.container .box.box2 {
+	background: url(../img/2.png);
+	background-size: cover;
+
+}
+.container .box.box3 {
+	background: url(../img/3.png);
+	background-size: cover;
+
+}
+.container .box.box4 {
+	background: url(../img/4.png);
+	background-size: cover;
+
+}
+.container .box.box5 {
+	background: url(../img/5.png);
+	background-size: cover;
+
+}
+.container .box.box6 {
+	background: url(../img/6.png);
+	background-size: cover;
+
+}
+
+
+.container .box:hover {
+	background-position: bottom;
+}
+
+.btnDetail {
+	/* display: inline-block; */
+	margin-left: 5rem;
+	padding: px 6px;
+	/* border-radius: 0.4rem; */
+	font-size: 18px;
+	font-weight: 800;
+	/* background: var(--text-color); */
+	color: var(--main-color);
+	/* border: 1px solid var(--main-color); */
+}
+
+/* scroll image  */
+
 
 .row img {
 	height: auto;
