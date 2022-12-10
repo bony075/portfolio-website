@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Personal portfolio website design</title>
+	<title>Bony portfolio</title>
 	<!---custom css link--->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -14,7 +14,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
+	<!-- for email  -->
+	<script type="text/javascript" src="js/sendmail.js"></script>
 
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("luGHwpITGOA2G0L66");
+		})();
+	</script>
 </head>
 
 <body>
@@ -27,8 +36,8 @@
 		<ul class="navbar">
 			<li><a href="#home">Home</a></li>
 			<li><a href="#about">About Me</a></li>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#portfolio">My Portfolio</a></li>
+			<!-- <li><a href="#services">Services</a></li> -->
+			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</header>
@@ -39,8 +48,8 @@
 			<h4>Hello</h4>
 			<h1>I'M MD. HAYATULLLA <br><span>BONY</span></h1>
 			<h3>Front-End Developer</h3>
-			<a href="#" class="btn">Hire Me</a>
-			<a href="img/MD._HAYATULLA_BONY.pdf" class="btn" download>Download CV</a>
+			<a href="https://www.linkedin.com/in/md-hayatulla-bony/" class="btn">Hire Me</a>
+			<a href="img/MD._HAYATULLA_BONY'S_RESUME.pdf" class="btn" download>Download RESUME</a>
 		</div>
 	</section>
 
@@ -52,25 +61,25 @@
 
 		<div class="about-text">
 			<h2>About Me</h2>
-			<h4>Hi, Im Here To Help Your Next Project</h4>
-			<p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
-				Industry's Standard Dummy Text Ever Since The 1500s, When An .ac porta sem turpis quis leo. Nulla in
-				feugiat elit.</p>
+			<p>I'm a Front-End Developer.
+				I have serious passion for API create, web development, UI effects, and creating intuitive, dynamic user
+				experiences.
+				Let's make something special.</p>
 			<div class="about-gri">
 				<div class="about-in">
-					<h5>1. Problem Solving</h5>
+					<h5>React.js</h5>
 				</div>
 
 				<div class="about-in">
-					<h5>2. Creative Idea</h5>
+					<h5>Node.js</h5>
 				</div>
 
 				<div class="about-in">
-					<h5>3. Search a lot</h5>
+					<h5>MongoDb</h5>
 				</div>
 
 				<div class="about-in">
-					<h5>4. High Quality</h5>
+					<h5>javaScript</h5>
 				</div>
 
 			</div>
@@ -81,30 +90,27 @@
 	<!---services--->
 	<section class="services" id="services">
 		<div class="main-text">
-			<h2>My Services</h2>
-			<h4>Better Design, Better Expericences</h4>
+			<h2>What I Can Do</h2>
+			<p>Better Design, Better Expericences</h4>
 		</div>
 
 		<div class="services-content">
 			<div class="box">
-				<img src="img/serv1.png">
-				<h3>Mobile App Design</h3>
-				<p>Lorem Ipsum Is Simply Dummy Text Of The Printing Andtypesetting Industry. Lorem Ipsum Has Been The
-					Website Industry's Standard Dummy .</p>
+				<img src="img/serv4.png">
+				<h3>Web Development</h3>
+				<p>I have an understanding of the web development process from inception to deployment.</p>
 			</div>
 
 			<div class="box">
 				<img src="img/serv2.png">
 				<h3>Website Design</h3>
-				<p>Lorem Ipsum Is Simply Dummy Text Of The Printing Andtypesetting Industry. Lorem Ipsum Has Been The
-					Website Industry's Standard Dummy .</p>
+				<p>I have one general responsibility to ensure that website visitors can easily interact with the page.
+				</p>
 			</div>
-
 			<div class="box">
-				<img src="img/serv3.png">
-				<h3>Video Editing</h3>
-				<p>Lorem Ipsum Is Simply Dummy Text Of The Printing Andtypesetting Industry. Lorem Ipsum Has Been The
-					Website Industry's Standard Dummy .</p>
+				<img src="img/serv9.png">
+				<h3>Responsive Design</h3>
+				<p>A responsive layout Changes depending on the device and screen size.</p>
 			</div>
 
 		</div>
@@ -113,7 +119,7 @@
 	<!---portfolio--->
 	<section class="portfolio" id="portfolio">
 		<div class="main-text">
-			<h2>My Portfolio</h2>
+			<h2>My Projects</h2>
 			<h4>Some Of My Distinguished Works</h4>
 		</div>
 
@@ -242,7 +248,7 @@
 				</div>
 				<h3>Mobile app landing design & Services</h3>
 			</div> -->
-<!-- old grid  -->
+			<!-- old grid  -->
 			<!-- <div class="row">
 				<img src="img/portfolio2.jpg">
 				<div class="main-row">
@@ -307,7 +313,7 @@
 				</div>
 				<h3>Mobile app landing design & Services</h3>
 			</div> -->
-<!-- old grid  -->
+			<!-- old grid  -->
 		</div>
 	</section>
 
@@ -315,8 +321,7 @@
 	<section class="contact" id="contact">
 		<div class="contact-text">
 			<h2>Contact Me</h2>
-			<h4>Let's Work Together</h4>
-			<p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry</p>
+			<h4>Have a question for any query or want to work together?</h4>
 			<div class="contact-list">
 				<li><a href="#">Dhaka,Bangladesh</a></li>
 				<li><a href="mailto:bony.075@gmail.com">bony.075@gmail.com</a></li>
@@ -333,14 +338,20 @@
 		</div>
 
 		<div class="contact-form">
-			<form onsubmit="sendEmail(); reset();return false;">
+			<!-- <form onsubmit="sendEmail(); reset();return false;"> -->
+			<form>
 				<!-- id="clint_mail" -->
-				<input type="" placeholder="Enter Your Name" required>
-				<input type="email" placeholder="Enter Your Email" required>
+				<input type="" placeholder="Enter Your Name" id="name">
+				<!-- <input type="email" placeholder="Enter Your Email" required id="clint_mail"> -->
+				<input type="email" placeholder="Enter Your Email" required id="email">
+				<!-- <input type="" placeholder="Enter Your Subject" id="clint_subject"> -->
 				<input type="" placeholder="Enter Your Subject" id="clint_subject">
-				<textarea name="" id="clint_massege" cols="40" rows="10" placeholder="Enter Your Message"
-					required></textarea>
-				<input type="submit" value="Submit" class="send">
+				<!-- <textarea name="" id="clint_massege" cols="40" rows="10" placeholder="Enter Your Message"
+					required></textarea> -->
+				<textarea name="" id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+				<!-- <input type="submit" value="Submit" class="send"> -->
+				<input type="submit" onclick="sendMail()" value="Submit" class="send">
+				<!-- <button class="send" onclick="sendMail()">Submit</button> -->
 			</form>
 		</div>
 	</section>
@@ -356,14 +367,15 @@
 
 	<script type="text/javascript" src="js/animation.js"></script>
 	<!-- email config  -->
-	<script src="https://smtpjs.com/v3/smtp.js">
-	</script>
-	<script> function sendEmail() {
+	<!-- <script src="https://smtpjs.com/v3/smtp.js">
+	</script> -->
+	<!-- <script> function sendEmail() {
 			Email.send({
 				// Host: "smtp.elasticemail.com",
 				Host: "smtp.gmail.com",
 				Username: "emacogloball@gmail.com",
-				Password: "1D231A818734F4949B611AEA0C95B9922242",
+				// Password: "A6BB1FFC5DE592CA5D40532F5AD2A3ABD5CB",
+				Password: "",
 				To: 'emacogloball@gmail.com',
 				From: document.getElementById("clint_mail").value,
 				Subject: document.getElementById("clint_subject").value,
@@ -372,7 +384,7 @@
 				message => alert(message)
 			);
 		}
-	</script>
+	</script> -->
 	<!---custom js link--->
 	<script type="text/javascript" src="js/script.js"></script>
 
