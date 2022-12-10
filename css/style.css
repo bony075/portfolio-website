@@ -282,6 +282,21 @@ header.sticky {
 	background-size: cover;
 
 }
+.container .box.box7 {
+	background: url(../img/7.png);
+	background-size: cover;
+
+}
+.container .box.box8 {
+	background: url(../img/8.png);
+	background-size: cover;
+
+}
+.container .box.box9 {
+	background: url(../img/9.png);
+	background-size: cover;
+
+}
 
 
 .container .box:hover {
