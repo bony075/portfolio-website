@@ -4,7 +4,11 @@
     flex-wrap: wrap;
     padding: 0 4px;
 }
-
+.pdetails{
+    display: flex;
+    justify-content: space-between;
+    
+}
 
 /* Create four equal columns that sits next to each other */
 .column {
